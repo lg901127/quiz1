@@ -6,7 +6,7 @@ var isPrime = function(num) {
     return true;
   }
   else {
-    for (var i = 2; i <= Math.round(Math.sqrt(num)); i++) {
+    for (var i = 2; i <= Math.sqrt(num); i++) {
       if (num % i == 0) {
         return false;
       }
@@ -21,3 +21,4 @@ console.log(isPrime(5));
 console.log(isPrime(95));
 console.log(isPrime(20));
 console.log(isPrime(13));
+console.log(isPrime(3067));

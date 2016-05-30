@@ -1,7 +1,7 @@
 
   class Book
     attr_accessor :title, :chapters
-    def initialize(title, chapters)
+    def initialize(title, chapters = [])
       @title = title
       @chapters = chapters
     end
@@ -33,8 +33,11 @@
 
 
 book1 = Book.new("book1", ["chp1"])
-# book1.chapters
 book1.add_chapter("chp2")
 book1.add_chapter("chp3")
-# puts book1.chapters
 book1.chapters_print
+
+book2 = Book.new("book2")
+book2.chapters_print
+book2.add_chapter("chp1")
+book2.chapters_print
