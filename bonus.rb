@@ -4,7 +4,7 @@ module HelperMethods
     array = sentence.split(" ")
     temp = []
     array.each do |element|
-       exclusion.include?(element) ? temp << element.capitalize : temp << element
+       exclusion.include?(element) ? temp << element : temp << element.capitalize
     end
     puts temp.join(" ")
     puts "I am the original array: #{array}"
