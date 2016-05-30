@@ -1,0 +1,1 @@
+Stack is a last in first out structure, while queue is a first in first out structure.
